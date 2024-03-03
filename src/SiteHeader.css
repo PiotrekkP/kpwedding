@@ -78,7 +78,9 @@
         color: rgb(212,33,9);
         cursor: pointer;
       }
-      
+      .dropdown-menu ul li:active a{
+        -webkit-tap-highlight-color:rgba(245, 240, 240, 0.973);
+      }
       .dropdownItem {
         display: flex;
         margin: 10px auto;
