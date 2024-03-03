@@ -1,5 +1,5 @@
 import SiteHeader from './SiteHeader';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 export default function AppearanceConfirmation() {
     const contentContainerStyle = {
