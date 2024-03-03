@@ -135,7 +135,7 @@
         box-shadow: none;
       }
   }
-
+  @media only screen and (min-width: 480px) {
   .menu-container{
     background-color: rgb(255,255,255);
     width: 100vw;
@@ -143,6 +143,7 @@
     position:fixed;
     top:0vw;
     z-index: 1000;
+    line-height: 5vh;
   }
 
   .site-header-h1{
@@ -156,7 +157,7 @@
       top: 3.5vh;
       right: 5vw;
       height: 5vh;
-      width: 10vw;
+      width: auto;
       overflow: hidden;
       cursor: pointer;
     }
@@ -230,4 +231,4 @@
       background-color:deeppink;
       border-radius: 10%;
     }
-    
+  }
