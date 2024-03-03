@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import SiteHeader from "./SiteHeader";
-import mapchurch from './map-church.PNG';
+
 const WeddingPlan = () => {
   useEffect(() => {
     window.scrollTo(0,0);
@@ -14,7 +14,6 @@ const WeddingPlan = () => {
         <p className="p-wedding-plan-left-hours">13:00</p>
         <p className="p-wedding-plan-right-info">Kościół pw. Miłosierdzia Bożego</p>
         <p className="p-wedding-plan-right-info2">W Łukawcu</p>
-        <img src={mapchurch} className='img-map-style' alt="Mapa kościoła" />
         <p className="p-wedding-plan-left-headers">Wesele</p>
         <p className="p-wedding-plan-left-hours">15:00</p>
         <p className="p-wedding-plan-right-info">Oranżeria Przyjęcia</p>
