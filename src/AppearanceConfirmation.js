@@ -48,9 +48,6 @@ export default function AppearanceConfirmation() {
           setbuttonTwoColor('rgb(207, 206, 206)');
         }
       };
-      useEffect(() => {
-        window.scrollTo(0,0);
-      })
       
       const navigate = useNavigate();
       const handleConfirmButtonClick = (targetPage) => {
