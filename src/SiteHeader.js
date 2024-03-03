@@ -49,7 +49,7 @@ export default function SiteHeader() {
 function DropdownItem(props){
     return(
       <li className = 'dropdownItem' onClick={props.onClick}>
-        <a>{props.text}</a>
+        <a href="/">{props.text}</a>
       </li>
     );
   }
