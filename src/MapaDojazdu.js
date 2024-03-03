@@ -24,7 +24,7 @@ const MapaDojazdu = () => {
       </a>
       <img src={mapchurch} className='img-map-style' alt="Mapa kościoła" />
       <p className="p-map-left-info">
-        Przyjęcie weselne
+        Wesele
       </p>
       <a href="https://maps.app.goo.gl/ujpSFQqMiPev3jFX9" className="p-map-right-links">
         Oranżeria Przyjęcia

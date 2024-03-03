@@ -6,7 +6,7 @@ export default function AdditionalEvents() {
   return (
     <div className="content-container-ae">
         <SiteHeader></SiteHeader>
-        <p className='p-site-title'>Dodatkowe atrakcje</p>
+        <p className='p-site-title-ae'>Dodatkowe atrakcje</p>
         <p className="p-additional-events-left-info">
             Stol...
         </p>

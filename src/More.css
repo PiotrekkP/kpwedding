@@ -1,17 +1,17 @@
 @media only screen and (max-width: 480px) {
-    .p-more-left-info {
-        height: 3vh;
-        width: 75vw;
-        border-radius: 50vw;
-        background-color: rgb(255,189,21);
-        color: white;
-        font-size: 2vh;
-        font-weight: 400;
-        padding-top: 0.5vh;
-        padding-bottom: 0.5vh;
-        text-indent: -37.5vw;
-        line-height: 3vh;
-        margin-right: 15vw;
+.p-more-left-info {
+    height: 3vh;
+    width: 75vw;
+    border-radius: 50vw;
+    background-color: rgb(255,189,21);
+    color: white;
+    font-size: 2vh;
+    font-weight: 400;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    text-indent: -37.5vw;
+    line-height: 3vh;
+    margin-right: 15vw;
 }
 
 .p-more-right-details {
@@ -62,5 +62,78 @@
 }
 .a-tel{
     color: white;
+}
+}
+
+@media only screen and (min-width: 480px) {
+.content-container-m{
+    background: url('more-background.png');
+    overflow: hidden;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.p-site-title{
+    margin-left: 0vw;
+    margin-top: 20vh;
+    font-size: 4vh;
+    padding-bottom: 2vh;
+}
+
+.p-more-left-info {
+    height: 5vh;
+    width: 50vw;
+    border-radius: 50vw;
+    background-color: rgb(255,189,21);
+    color: white;
+    font-size: 2vh;
+    font-weight: 400;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    text-indent: -25vw;
+    line-height: 5vh;
+    margin-right: 15vw;
+    margin-bottom: 25vh;
+}
+
+.p-more-right-details {
+    height: 5vh;
+    width: 45vw;
+    border-radius: 50vw;
+    background-color: rgb(255,233,141);
+    color: black;
+    font-size: 2vh;
+    font-weight: 400;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    line-height: 5vh;
+    margin-left: 30vw;
+    margin-top: -31vh;
+    margin-bottom: 10vh;    
+}
+
+.p-contact-details-kinga-m{
+width: 100vw;
+height: 4vh;
+background-color: rgb(255,189,21);
+color:white;
+font-size: 2vh;
+text-align: left;
+text-indent: 15vw;
+margin-top: 8vh;
+padding-top: 3.5vh;
+}
+.p-contact-details-patryk-m{
+width: 100vw;
+height: 4vh;
+background-color: rgb(255,189,21);
+color:white;
+font-size: 2vh;
+text-align: left;
+text-indent: 15vw;
+padding-bottom: 2vh;
+margin-bottom: 0vh;
+margin-top: -2vh;
 }
 }

@@ -8,6 +8,8 @@ import './GuestsTransport.css';
 import './Home.css';
 import './MapaDojazdu.css';
 import './More.css';
+import './AppearanceConfirmation.css';
+import './Thanks.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

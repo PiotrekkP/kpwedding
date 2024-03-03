@@ -79,4 +79,105 @@
   .a-tel{
     color: white;
 }
+.p-site-title-ae{
+    margin-left: 0vw;
+    margin-top: 15vh;
+    font-size: 3vh;
+    padding-bottom: 2vh;
 }
+
+}
+
+@media only screen and (min-width: 480px) {
+    .p-additional-events-left-info {
+        background-color: rgb(112,146,88);
+        height: 5vh;
+        width: 45vw;
+        border-radius: 50vw;
+        color: white;
+        font-size: 2vh;
+        font-weight: 400;
+        padding-top: 0.5vh;
+        padding-bottom: 0.5vh;
+        text-indent: -25vw;
+        line-height: 5vh;
+        margin-right: 20vw;
+        margin-bottom: 25vh;
+    }
+
+    .p-site-title-ae{
+        margin-left: 0vw;
+        margin-top: 20vh;
+        font-size: 4vh;
+        padding-bottom: 2vh;
+        margin-bottom: 10vh;
+    }
+    
+    .p-additional-events-right-details {
+        background-color: rgb(178,186,119);
+        height: 5vh;
+        width: 45vw;
+        border-radius: 50vw;
+        color: black;
+        font-size: 2vh;
+        font-weight: 400;
+        padding-top: 0.5vh;
+        padding-bottom: 0.5vh;
+        line-height: 5vh;
+        margin-left: 20vw;
+        margin-top: -31vh;
+        margin-bottom: 10vh;    
+    }
+    
+    .p-additional-events-right-details2 {
+        background-color: rgb(178,186,119);
+        height: 5vh;
+        width: 45vw;
+        border-radius: 50vw;
+        color: black;
+        font-size: 2vh;
+        font-weight: 400;
+        padding-top: 0.5vh;
+        padding-bottom: 0.5vh;
+        line-height: 5vh;
+        margin-left: 20vw;
+        margin-top:-6vh;
+        margin-bottom: 10vh;  
+    }
+    
+    .content-container-ae{
+        background: url('additional-events-background.PNG');
+        overflow: hidden;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .p-contact-details-kinga-ae{
+        width: 100vw;
+        height: 4vh;
+        background-color: rgb(112,146,88);
+        color:white;
+        font-size: 2vh;
+        text-align: left;
+        text-indent: 15vw;
+        margin-top: 8vh;
+        padding-top: 3.5vh;
+      }
+      .p-contact-details-patryk-ae{
+        width: 100vw;
+        height: 4vh;
+        background-color: rgb(112,146,88);
+        color:white;
+        font-size: 2vh;
+        text-align: left;
+        text-indent: 15vw;
+        padding-bottom: 2vh;
+        margin-bottom: 0vh;
+        margin-top: -2vh;
+      }
+      .a-tel{
+        color: white;
+    }
+    }

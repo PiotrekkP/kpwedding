@@ -5,6 +5,8 @@ import GuestsTransport from './GuestsTransport';
 import Home from './Home';
 import MapaDojazdu from './MapaDojazdu';
 import More from './More';
+import AppearanceConfirmation from './AppearanceConfirmation';
+import Thanks from './Thanks';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
             <Route path="/transport" element={<GuestsTransport/>}></Route>
             <Route path="/mapy" element={<MapaDojazdu/>}></Route>
             <Route path="/wiecej" element={<More/>}></Route>
+            <Route path="/potwierdzenie" element={<AppearanceConfirmation/>}></Route>
+            <Route path="/podziekowanie" element={<Thanks/>}></Route>
           </Routes>
         </div>
       </div>

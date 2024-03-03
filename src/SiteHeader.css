@@ -1,6 +1,6 @@
 @media only screen and (max-width: 480px) {
     .menu-container{
-      background-color: rgb(255,255,255);
+      background-color: rgba(245, 240, 240, 0.973);
       width: 100vw;
       height: 11vh;
       position:fixed;
@@ -26,7 +26,7 @@
 
       .dropdown-menu{
         position: absolute;  
-        background-color: #fff;
+        background-color: rgba(245, 240, 240, 0.973);
         width: 100vw;
         height: auto;
         z-index: 9999;
@@ -69,7 +69,8 @@
       }
       
       .dropdown-menu ul li{
-        padding: 10px 10px;
+        padding-top: 2vh;
+        padding-bottom: 1vh;
         border-top: 1px solid rgba(0,0,0,0.05);
       }
       
@@ -100,44 +101,10 @@
         height: 100vh; /* 100% wysokości widoku */
         overflow: hidden; /* Zapewnia, że obrazy nie będą wychodziły poza obszar kontenera */
       }
-      .b-drop{
-        background-color: #fff;
-        color: black;
-        margin:auto;
-        padding-top: 0.5vh;
-        padding-bottom: 0.5vh;
-        padding-left: 30vw;
-        padding-right: 30vw;
-        outline: none;
-        border: none;
-        box-shadow: none;
-      }
-      .b-drop:hover{
-        background-color: #fff;
-        color: red;
-        margin:auto;
-        padding-top: 0.5vh;
-        padding-bottom: 0.5vh;
-        padding-left: 30vw;
-        padding-right: 30vw;
-        border: none;
-        box-shadow: none;
-      }
-      .b-drop:focus{
-        background-color: white;
-        color: red;
-        margin:auto;
-        padding-top: 0.5vh;
-        padding-bottom: 0.5vh;
-        padding-left: 30vw;
-        padding-right: 30vw;
-        border: none;
-        box-shadow: none;
-      }
   }
   @media only screen and (min-width: 480px) {
   .menu-container{
-    background-color: rgb(255,255,255);
+    background-color: rgba(245, 240, 240, 0.973);
     width: 100vw;
     height: 11vh;
     position:fixed;
@@ -164,7 +131,7 @@
 
     .dropdown-menu{
       position: absolute;  
-      background-color: #fff;
+      background-color: rgba(245, 240, 240, 0.973);
       width: 100vw;
       height: auto;
       z-index: 9999;
@@ -207,8 +174,8 @@
     }
     
     .dropdown-menu ul li{
-      padding: 10px 10px;
-      border-top: 1px solid rgba(0,0,0,0.05);
+      padding-top: 1vh;
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
     }
     
     .dropdown-menu ul li:hover a{
