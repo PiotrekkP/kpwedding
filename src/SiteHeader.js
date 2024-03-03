@@ -35,11 +35,11 @@ export default function SiteHeader() {
         </div>
         <div className={`dropdown-menu ${open? 'active' : 'inactive'}`}>
           <ul>
-            <DropdownItem text = {"Plan wesela"} onClick={()=> handleDropdownItemClick('/plan-wesela')}/>
-            <DropdownItem text = {"Mapa dojazdu"} onClick={()=> handleDropdownItemClick('/mapy')}/>
-            <DropdownItem text = {"Transport gości"}onClick={()=> handleDropdownItemClick('/transport')}/>
-            <DropdownItem text = {"Dodatkowe atrakcje"} onClick={()=> handleDropdownItemClick('/atrakcje')}/>
-            <DropdownItem text = {"Więcej..."} onClick={()=> handleDropdownItemClick('/wiecej')}/>
+            <DropdownItem text = {"Plan wesela"} to="/plan-wesela" onClick={()=> handleDropdownItemClick('/plan-wesela')}/>
+            <DropdownItem text = {"Mapa dojazdu"} to="/mapy" onClick={()=> handleDropdownItemClick('/mapy')}/>
+            <DropdownItem text = {"Transport gości"} to="/transport" onClick={()=> handleDropdownItemClick('/transport')}/>
+            <DropdownItem text = {"Dodatkowe atrakcje"} to="/atrakcje" onClick={()=> handleDropdownItemClick('/atrakcje')}/>
+            <DropdownItem text = {"Więcej..."} to="/wiecej" onClick={()=> handleDropdownItemClick('/wiecej')}/>
           </ul>
         </div>
       </div>
@@ -49,7 +49,7 @@ export default function SiteHeader() {
 function DropdownItem(props){
     return(
       <li className = 'dropdownItem' onClick={props.onClick}>
-        <a href="/">{props.text}</a>
+        <a href={props.to}>{props.text}</a>
       </li>
     );
   }
