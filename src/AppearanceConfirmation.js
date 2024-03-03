@@ -111,7 +111,7 @@ export default function AppearanceConfirmation() {
         <p className="p-appearance-confirmation-left-info" style={{ backgroundColor: isAPDisabled ? 'rgb(66,66,66)' : 'rgb(112,146,88)'}}>
             Imie i nazwisko
         </p>
-        <textarea className="p-appearance-confirmation-right-details-ta" style={{backgroundColor: isAPDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}}></textarea>
+        <textarea readOnly={isAPDisabled} className="p-appearance-confirmation-right-details-ta" style={{backgroundColor: isAPDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}}></textarea>
         <p className="p-appearance-confirmation-left-info" style={{backgroundColor: isAPDisabled ? 'rgb(66,66,66)' : 'rgb(112,146,88)'}}>
             Dieta
         </p>
@@ -129,19 +129,19 @@ export default function AppearanceConfirmation() {
         <p className="p-appearance-confirmation-left-info" style={{ backgroundColor: isCDisabled ? 'rgb(66,66,66)' : 'rgb(112,146,88)'}}>
             Imie
         </p>
-        <textarea className="p-appearance-confirmation-right-details-ta" style={{backgroundColor: isCDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}}></textarea>
+        <textarea readOnly={isCDisabled} className="p-appearance-confirmation-right-details-ta" style={{backgroundColor: isCDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}}></textarea>
         <p className="p-appearance-confirmation-left-info" style={{ backgroundColor: isCDisabled ? 'rgb(66,66,66)' : 'rgb(112,146,88)'}}>
             Wiek
         </p>
-        <textarea className="p-appearance-confirmation-right-details-ta" style={{ backgroundColor: isCDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}}></textarea>
+        <textarea readOnly={isCDisabled} className="p-appearance-confirmation-right-details-ta" style={{ backgroundColor: isCDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}}></textarea>
         <p className="p-appearance-confirmation-left-info" style={{ backgroundColor: isCDisabled || isTwoDisabled ? 'rgb(66,66,66)' : 'rgb(112,146,88)'}}>
             Imie
         </p>
-        <textarea className="p-appearance-confirmation-right-details-ta" style={{backgroundColor: isCDisabled || isTwoDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}}></textarea>
+        <textarea readOnly={isCDisabled || isTwoDisabled} className="p-appearance-confirmation-right-details-ta" style={{backgroundColor: isCDisabled || isTwoDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}}></textarea>
         <p className="p-appearance-confirmation-left-info" style={{ backgroundColor: isCDisabled || isTwoDisabled ? 'rgb(66,66,66)' : 'rgb(112,146,88)'}}>
             Wiek
         </p>
-        <textarea className="p-appearance-confirmation-right-details-ta" style={{ backgroundColor: isCDisabled || isTwoDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}}></textarea>
+        <textarea readOnly={isCDisabled || isTwoDisabled} className="p-appearance-confirmation-right-details-ta" style={{ backgroundColor: isCDisabled || isTwoDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}}></textarea>
         <p className="p-appearance-confirmation-left-info-half-t" style={{ backgroundColor: isTransportDisabled ? 'rgb(66,66,66)' : 'rgb(112,146,88)'}}>
             Potrzebuje transportu z kosciola na sale
         </p>
