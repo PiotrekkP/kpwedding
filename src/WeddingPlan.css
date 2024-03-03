@@ -104,14 +104,31 @@
     }
     
     @media only screen and (min-width: 480px) {
-        .content-container-wp{
-            background: url('wedding-plan-background_full.jpg');
+        .content-container-wp-old{
             overflow: hidden;
             background-size: contain;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
+        .content-container-wp {
+            background: url('wedding-plan-background_full.jpg');
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.5s ease-in-out;
+            overflow: hidden;
+            background-size: contain;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          
+          .content-container-wp.loaded {
+            visibility: visible;
+            opacity: 1;
+          }
+
+
     .p-site-title{
         margin-left: 0vw;
         margin-top: 20vh;
@@ -207,4 +224,5 @@
         margin-bottom: 0vh;
         margin-top: -2vh;
       }
+
     }

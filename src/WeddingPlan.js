@@ -1,13 +1,26 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import SiteHeader from "./SiteHeader";
-
+import ba from "./wedding-plan-background_full.jpg"
 const WeddingPlan = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
   useEffect(() => {
-    window.scrollTo(0,0);
-  })
+    // Po załadowaniu strony ustawia isLoaded na true
+    window.addEventListener("load", () => {
+      setIsLoaded(true);
+      window.scrollTo(0,0); // Przesunięcie do góry po załadowaniu
+    });
+
+    // Efekt czyszczenia przy usuwaniu komponentu
+    return () => {
+      window.removeEventListener("load", () => {
+        setIsLoaded(false);
+      });
+    };
+  }, []); // Pusta tablica dependencies oznacza, że useEffect zostanie wywołany tylko raz, po zamontowaniu komponentu
 
       return (
-    <div className="content-container-wp">
+    <div className={`content-container-wp ${isLoaded ? 'loaded' : ''}`}>
       <SiteHeader></SiteHeader>
         <p className="p-site-title">Plan wesela</p>
         <p className="p-wedding-plan-left-headers">Ślub</p>
