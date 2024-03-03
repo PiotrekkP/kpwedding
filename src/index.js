@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import './WeddingPlan.css';
 import './SiteHeader.css';
+import './AdditionalEvents.css';
+import './GuestsTransport.css';
+import './Home.css';
+import './MapaDojazdu.css';
+import './More.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

@@ -29,14 +29,14 @@ export default function SiteHeader() {
 
   return (
     <div ref={menuRef} className='menu-container'>
-        <h1 className='site-header-h1' onClick={()=> handleDropdownItemClick('/home')}>K & P</h1>
+        <h1 className='site-header-h1' onClick={()=> handleDropdownItemClick('/')}>K & P</h1>
         <div className='menu-trigger' onClick={()=>{setOpen(!open)}}>
           <img src={burger} alt='burger-menu'></img>
         </div>
         <div className={`dropdown-menu ${open? 'active' : 'inactive'}`}>
           <ul>
-            <DropdownItem text = {"Plan wesela"} onClick={()=> handleDropdownItemClick('/planwesela')}/>
-            <DropdownItem text = {"Mapa dojazdu"} onClick={()=> handleDropdownItemClick('/')}/>
+            <DropdownItem text = {"Plan wesela"} onClick={()=> handleDropdownItemClick('/plan-wesela')}/>
+            <DropdownItem text = {"Mapa dojazdu"} onClick={()=> handleDropdownItemClick('/mapy')}/>
             <DropdownItem text = {"Transport gości"}onClick={()=> handleDropdownItemClick('/transport')}/>
             <DropdownItem text = {"Dodatkowe atrakcje"} onClick={()=> handleDropdownItemClick('/atrakcje')}/>
             <DropdownItem text = {"Więcej..."} onClick={()=> handleDropdownItemClick('/wiecej')}/>
