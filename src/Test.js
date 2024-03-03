@@ -15,6 +15,8 @@ function Test() {
           >
             Learn React
           </a>
+          <Link to="/test2"><button>Click</button></Link>
+          
         </header>
       </div>
     );
