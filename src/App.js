@@ -3,7 +3,7 @@ import './App.css';
 import Test from './Test'
 import React, {useState, useEffect, useRef} from 'react';
 import { useNavigate } from 'react-router-dom';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   const [open, setOpen] = useState(false);
