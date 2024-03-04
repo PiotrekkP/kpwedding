@@ -51,7 +51,8 @@
 .content-container-thanks{
     background: url('kpthanks.jpeg');
     overflow: hidden;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     min-height: 100vh;
     display: flex;
     flex-direction: column;

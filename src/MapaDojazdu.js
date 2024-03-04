@@ -22,7 +22,7 @@ const MapaDojazdu = () => {
       <a href="https://maps.app.goo.gl/JAxf1DoUkn2TH9Q59" className="p-map-right-links2">
         W Łukawcu
       </a>
-      <img src={mapchurch} className='img-map-style' alt="Mapa kościoła" />
+      <img src={mapchurch} className='img-map-style' alt="Mapa kościoła"/>
       <p className="p-map-left-info">
         Wesele
       </p>

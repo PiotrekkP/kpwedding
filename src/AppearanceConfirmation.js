@@ -92,7 +92,7 @@ export default function AppearanceConfirmation() {
         <SiteHeader></SiteHeader>
         <p className="p-site-title">Potwierdzenie przybycia</p>
         <p className="p-appearance-confirmation-left-info">
-            Imie i nazwisko
+            Imię i nazwisko
         </p>
         <textarea className="p-appearance-confirmation-right-details-ta"></textarea>
         <p className="p-appearance-confirmation-left-info">
@@ -100,25 +100,25 @@ export default function AppearanceConfirmation() {
         </p>
         
         <select className="select-diet" id="diet" name="diet">
-            <option className="option-diet" value="zwykla">zwykla</option>
-            <option className="option-diet" value="wegetarianska">wegetarianska</option>
-            <option className="option-diet" value="weganska">weganska</option>
+            <option className="option-diet" value="zwykla">zwykła</option>
+            <option className="option-diet" value="wegetarianska">wegetariańska</option>
+            <option className="option-diet" value="weganska">wegańska</option>
         </select>
         <p className="p-appearance-confirmation-left-info-half" style={{ backgroundColor: isAPDisabled ? 'rgb(66,66,66)' : 'rgb(112,146,88)'}}>
-            Osoba towarzyszaca
+            Osoba towarzysząca
         </p>
         <p className='p-btn-yn'  style={{ backgroundColor: buttonAPColor, cursor: 'pointer' }} onClick={toggleAPButton}>{buttonAPText}</p>
         <p className="p-appearance-confirmation-left-info" style={{ backgroundColor: isAPDisabled ? 'rgb(66,66,66)' : 'rgb(112,146,88)'}}>
-            Imie i nazwisko
+            Imię i nazwisko
         </p>
         <textarea readOnly={isAPDisabled} className="p-appearance-confirmation-right-details-ta" style={{backgroundColor: isAPDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}}></textarea>
         <p className="p-appearance-confirmation-left-info" style={{backgroundColor: isAPDisabled ? 'rgb(66,66,66)' : 'rgb(112,146,88)'}}>
             Dieta
         </p>
         <select className="select-diet" id="diet" name="diet" style={{backgroundColor: isAPDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}} disabled={isAPDisabled}>
-            <option className="option-diet" value="zwykla">zwykla</option>
-            <option className="option-diet" value="wegetarianska">wegetarianska</option>
-            <option className="option-diet" value="weganska">weganska</option>
+            <option className="option-diet" value="zwykla">zwykła</option>
+            <option className="option-diet" value="wegetarianska">wegetariańska</option>
+            <option className="option-diet" value="weganska">wegańska</option>
         </select>
         <p className="p-appearance-confirmation-left-info-half" style={{ backgroundColor: isCDisabled ? 'rgb(66,66,66)' : 'rgb(112,146,88)'}}>
             Dzieci
@@ -127,7 +127,7 @@ export default function AppearanceConfirmation() {
         <p className='p-btn-number1'  style={{  backgroundColor: buttonOneColor, cursor: 'pointer' }} onClick={toggleOneButton}>1</p>
         <p className='p-btn-number2'  style={{  backgroundColor: buttonTwoColor, cursor: 'pointer' }} onClick={toggleTwoButton}>2</p>
         <p className="p-appearance-confirmation-left-info" style={{ backgroundColor: isCDisabled ? 'rgb(66,66,66)' : 'rgb(112,146,88)'}}>
-            Imie
+            Imię
         </p>
         <textarea readOnly={isCDisabled} className="p-appearance-confirmation-right-details-ta" style={{backgroundColor: isCDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}}></textarea>
         <p className="p-appearance-confirmation-left-info" style={{ backgroundColor: isCDisabled ? 'rgb(66,66,66)' : 'rgb(112,146,88)'}}>
@@ -135,7 +135,7 @@ export default function AppearanceConfirmation() {
         </p>
         <textarea readOnly={isCDisabled} className="p-appearance-confirmation-right-details-ta" style={{ backgroundColor: isCDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}}></textarea>
         <p className="p-appearance-confirmation-left-info" style={{ backgroundColor: isCDisabled || isTwoDisabled ? 'rgb(66,66,66)' : 'rgb(112,146,88)'}}>
-            Imie
+            Imię
         </p>
         <textarea readOnly={isCDisabled || isTwoDisabled} className="p-appearance-confirmation-right-details-ta" style={{backgroundColor: isCDisabled || isTwoDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}}></textarea>
         <p className="p-appearance-confirmation-left-info" style={{ backgroundColor: isCDisabled || isTwoDisabled ? 'rgb(66,66,66)' : 'rgb(112,146,88)'}}>
@@ -143,7 +143,7 @@ export default function AppearanceConfirmation() {
         </p>
         <textarea readOnly={isCDisabled || isTwoDisabled} className="p-appearance-confirmation-right-details-ta" style={{ backgroundColor: isCDisabled || isTwoDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}}></textarea>
         <p className="p-appearance-confirmation-left-info-half-t" style={{ backgroundColor: isTransportDisabled ? 'rgb(66,66,66)' : 'rgb(112,146,88)'}}>
-            Potrzebuje transportu z kosciola na sale
+            Potrzebuję transportu z kościoła na salę
         </p>
         <p className='p-btn-yn-t'  style={{backgroundColor: buttonTColor, cursor: 'pointer' }} onClick={toggleTButton}>{buttonTText}</p>
         <p className='p-btn-wyslij'  style={{ cursor: 'pointer' }} onClick={()=> handleConfirmButtonClick('/podziekowanie')}>Wyślij</p>

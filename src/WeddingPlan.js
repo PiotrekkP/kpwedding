@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import SiteHeader from "./SiteHeader";
+import './WeddingPlan.css';
 
 const WeddingPlan = () => {
   useEffect(() => {

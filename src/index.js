@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import './WeddingPlan.css';
 import './SiteHeader.css';
 import './AdditionalEvents.css';
 import './GuestsTransport.css';

@@ -63,6 +63,12 @@
 .a-tel{
     color: white;
 }
+.p-site-title{
+    margin-left: 0vw;
+    margin-top: 20vh;
+    font-size: 4vh;
+    padding-bottom: 2vh;
+}
 }
 
 @media only screen and (min-width: 480px) {
@@ -136,4 +142,7 @@ padding-bottom: 2vh;
 margin-bottom: 0vh;
 margin-top: -2vh;
 }
+}
+p{
+    font-family: 'Philosopher';
 }
