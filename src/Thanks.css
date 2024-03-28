@@ -31,7 +31,7 @@
       }
       .p-thanks{
         background-color: rgb(178,186,119);
-        color: black;
+        color: rgba(61, 61, 61, 1);
         padding-top: 4vh;
         padding-bottom: 4vh;
         width: 75vw;
@@ -60,7 +60,7 @@
 }
 .p-thanks{
     background-color: rgb(178,186,119);
-    color: black;
+    color: rgba(61, 61, 61, 1);
     padding-top: 4vh;
     padding-bottom: 4vh;
     padding-left: 5vw;

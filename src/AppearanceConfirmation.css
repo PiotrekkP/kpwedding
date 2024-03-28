@@ -53,7 +53,7 @@
   width: 55vw;
   border-radius: 50vw;
   background-color: rgb(178,186,119);
-  color: black;
+  color: rgba(61, 61, 61, 1);
   font-size: 2vh;
   font-weight: 400;
   padding-top: 0.5vh;
@@ -67,7 +67,7 @@
   width: 51vw;
   border-radius: 50vw;
   background-color: rgb(178,186,119);
-  color: black;
+  color: rgba(61, 61, 61, 1);
   font-size: 2vh;
   font-weight: 400;
   padding-top: 0.5vh;
@@ -118,7 +118,7 @@
     padding-bottom: 0.5vh;
     border-radius: 50vw;
     background-color: rgb(178,186,119);
-    color: black;
+    color: rgba(61, 61, 61, 1);
     font-size: 2vh;
     font-weight: 400;
     font-family: 'Philosopher';
@@ -127,7 +127,7 @@
     text-align-last: center;
 }
 .option-diet{
-    color:black;
+    color:rgba(61, 61, 61, 1);
     text-align: center;
 }
 select {
@@ -145,7 +145,7 @@ select {
     width: 10vw;
     border-radius: 50vw;
     background-color: rgb(178,186,119);
-    color: black;
+    color: rgba(61, 61, 61, 1);
     font-size: 2vh;
     font-weight: 400;
     padding-top: 0.5vh;
@@ -159,7 +159,7 @@ select {
     width: 10vw;
     border-radius: 50vw;
     background-color: rgb(178,186,119);
-    color: black;
+    color: rgba(61, 61, 61, 1);
     font-size: 2vh;
     font-weight: 400;
     padding-top: 0.5vh;
@@ -173,7 +173,7 @@ select {
     width: 10vw;
     border-radius: 50vw;
     background-color: rgb(178,186,119);
-    color: black;
+    color: rgba(61, 61, 61, 1);
     font-size: 2vh;
     font-weight: 400;
     padding-top: 0.5vh;
@@ -188,7 +188,7 @@ select {
     width: 10vw;
     border-radius: 50vw;
     background-color: rgb(178,186,119);
-    color: black;
+    color: rgba(61, 61, 61, 1);
     font-size: 2vh;
     font-weight: 400;
     padding-top: 0.5vh;
@@ -273,7 +273,7 @@ select {
     height: 5vh;
     width: 45vw;
     border-radius: 50vw;
-    color: black;
+    color: rgba(61, 61, 61, 1);
     font-size: 2vh;
     font-weight: 400;
     padding-top: 0.5vh;
@@ -289,7 +289,7 @@ select {
     height: 5vh;
     width: 45vw;
     border-radius: 50vw;
-    color: black;
+    color: rgba(61, 61, 61, 1);
     font-size: 2vh;
     font-weight: 400;
     padding-top: 0.5vh;
@@ -339,7 +339,7 @@ select {
       height: 6vh;
       width: 45vw;
       border-radius: 50vw;
-      color: black;
+      color: rgba(61, 61, 61, 1);
       font-size: 2vh;
       font-weight: 400;
       padding-top: 0.5vh;
@@ -351,7 +351,7 @@ select {
       border: none;
   }
   .option-diet{
-      color:black;
+      color:rgba(61, 61, 61, 1)black;
       text-align: center;
   }
   select {
@@ -369,7 +369,7 @@ select {
       width: 5vw;
       border-radius: 50vw;
       background-color: rgb(178,186,119);
-      color: black;
+      color: rgba(61, 61, 61, 1);
       font-size: 2vh;
       font-weight: 400;
       padding-top: 0.5vh;
@@ -383,7 +383,7 @@ select {
       width: 5vw;
       border-radius: 50vw;
       background-color: rgb(178,186,119);
-      color: black;
+      color: rgba(61, 61, 61, 1);
       font-size: 2vh;
       font-weight: 400;
       padding-top: 0.5vh;
@@ -397,7 +397,7 @@ select {
       width: 5vw;
       border-radius: 50vw;
       background-color: rgb(178,186,119);
-      color: black;
+      color: rgba(61, 61, 61, 1);
       font-size: 2vh;
       font-weight: 400;
       padding-top: 0.5vh;
@@ -412,7 +412,7 @@ select {
       width: 5vw;
       border-radius: 50vw;
       background-color: rgb(178,186,119);
-      color: black;
+      color: rgba(61, 61, 61, 1);
       font-size: 2vh;
       font-weight: 400;
       padding-top: 0.5vh;

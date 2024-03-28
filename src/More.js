@@ -25,7 +25,7 @@ useEffect(() => {
         <p className="p-more-right-details">Oranżeria Przyjęcia</p>
         <p className="p-more-left-info">Strona</p>
         <p className="p-more-right-details">Dominika Zdaniewicz</p>
-        <p className="p-more-right-details">Piotr Paluszek</p>
+        <p className="p-more-right-details2">Piotr Paluszek</p>
         <p className="p-contact-details-kinga-m"><a className='a-tel' href='tel:+48504386599'>Kinga +48 504 386 599</a></p>
         <p className="p-contact-details-patryk-m"><a className='a-tel' href='tel:+48666174152'>Patryk +48 666 174 152</a></p>
     </div>

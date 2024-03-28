@@ -7,6 +7,7 @@
       margin-bottom: 6vh;
     }
     .p-site-title{
+        color: rgba(61, 61, 61, 1);
         margin-left: 0vw;
         margin-top: 15vh;
         font-size: 3vh;
@@ -34,7 +35,7 @@
         width: 60vw;
         border-radius: 50vw;
         background-color: rgb(239,209,217);
-        color: black;
+        color: rgba(61, 61, 61, 1);
         font-size: 2vh;
         font-weight: 400;
         padding-top: 0.5vh;
@@ -50,7 +51,7 @@
         width: 60vw;
         border-radius: 50vw;
         background-color: rgb(239,209,217);
-        color: black;
+        color: rgba(61, 61, 61, 1);
         font-size: 2vh;
         font-weight: 400;
         padding-top: 0.5vh;
@@ -104,6 +105,7 @@
         margin-bottom: 6vh;
       }
       .p-site-title{
+        color: rgba(61, 61, 61, 1);
         margin-left: 0vw;
         margin-top: 20vh;
         font-size: 4vh;
@@ -131,7 +133,7 @@
         width: 45vw;
         border-radius: 50vw;
         background-color: rgb(239,209,217);
-        color: black;
+        color: rgba(61, 61, 61, 1);
         font-size: 2vh;
         font-weight: 400;
         padding-top: 0.5vh;
@@ -148,7 +150,7 @@
         width: 45vw;
         border-radius: 50vw;
         background-color: rgb(239,209,217);
-        color: black;
+        color: rgba(61, 61, 61, 1);
         font-size: 2vh;
         font-weight: 400;
         padding-top: 0.5vh;

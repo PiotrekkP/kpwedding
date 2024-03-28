@@ -19,7 +19,7 @@
     width: 55vw;
     border-radius: 50vw;
     background-color: rgb(178,186,119);
-    color: black;
+    color: rgba(61, 61, 61, 1);
     font-size: 2vh;
     font-weight: 400;
     padding-top: 0.5vh;
@@ -34,7 +34,7 @@
     width: 55vw;
     border-radius: 50vw;
     background-color: rgb(178,186,119);
-    color: black;
+    color: rgba(61, 61, 61, 1);
     font-size: 2vh;
     font-weight: 400;
     padding-top: 0.5vh;
@@ -80,6 +80,7 @@
     color: white;
 }
 .p-site-title-ae{
+    color: rgba(61, 61, 61, 1);
     margin-left: 0vw;
     margin-top: 15vh;
     font-size: 3vh;
@@ -106,6 +107,7 @@
     }
 
     .p-site-title-ae{
+        color: rgba(61, 61, 61, 1);
         margin-left: 0vw;
         margin-top: 20vh;
         font-size: 4vh;
@@ -118,7 +120,7 @@
         height: 5vh;
         width: 45vw;
         border-radius: 50vw;
-        color: black;
+        color: rgba(61, 61, 61, 1);
         font-size: 2vh;
         font-weight: 400;
         padding-top: 0.5vh;
@@ -134,7 +136,7 @@
         height: 5vh;
         width: 45vw;
         border-radius: 50vw;
-        color: black;
+        color: rgba(61, 61, 61, 1);
         font-size: 2vh;
         font-weight: 400;
         padding-top: 0.5vh;

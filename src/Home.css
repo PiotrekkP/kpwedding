@@ -8,7 +8,7 @@
     
     .button-confirm-appearance{
         background-color: rgb(178,186,119);
-        color: black;
+        color: rgba(61, 61, 61, 1);
         padding-top: 2.5vh;
         padding-bottom: 2.5vh;
         width: 75vw;
@@ -62,7 +62,7 @@
 
 .button-confirm-appearance{
     background-color: rgb(178,186,119);
-    color: black;
+    color: rgba(61, 61, 61, 1);
     padding-top: 2.5vh;
     padding-bottom: 2.5vh;
     width: 75vw;
