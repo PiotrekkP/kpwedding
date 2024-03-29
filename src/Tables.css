@@ -16,12 +16,15 @@
         padding-bottom: 2vh;
     }
     .p-site-info{
-        color: rgba(61, 61, 61, 1);
+        color: white;
+        background-color: rgb(112,146,88);
         margin-left: 5vw;
         margin-right: 5vw;
-        margin-top: 0vh;
-        font-size: 2.2vh;
-        padding-bottom: 2vh;
+        margin-top: 2vh;
+        font-size: 2vh;
+        padding-bottom: 1vh;
+        padding-top: 1vh;
+        border-radius: 50vw;
     }
     .p-tables-left-headers {
         height: 3vh;
