@@ -30,6 +30,7 @@ export default function SiteHeader() {
   return (
     <div ref={menuRef} className='menu-container'>
         <h1 className='site-header-h1' onClick={()=> handleDropdownItemClick('/')}>K & P</h1>
+        <h1 className='site-header-h1-2' onClick={()=> handleDropdownItemClick('/')}>08.06.2024 r.</h1>
         <div className='menu-trigger' onClick={()=>{setOpen(!open)}}>
           <img src={burger} alt='burger-menu'></img>
         </div>
