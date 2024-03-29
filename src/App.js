@@ -7,6 +7,7 @@ import MapaDojazdu from './MapaDojazdu';
 import More from './More';
 import AppearanceConfirmation from './AppearanceConfirmation';
 import Thanks from './Thanks';
+import Tables from './Tables';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home/>}></Route>
             <Route path="/plan-wesela" element={<WeddingPlan/>}></Route>
+            <Route path="/plan-stolow" element={<Tables/>}></Route>
             <Route path="/atrakcje" element={<AdditionalEvents/>}></Route>
             <Route path="/transport" element={<GuestsTransport/>}></Route>
             <Route path="/mapy" element={<MapaDojazdu/>}></Route>

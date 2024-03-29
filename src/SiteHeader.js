@@ -37,8 +37,9 @@ export default function SiteHeader() {
           <ul>
             <DropdownItem text = {"Plan wesela"} to="/plan-wesela" onClick={()=> handleDropdownItemClick('/plan-wesela')}/>
             <DropdownItem text = {"Mapa dojazdu"} to="/mapy" onClick={()=> handleDropdownItemClick('/mapy')}/>
-            {/*<DropdownItem text = {"Transport gości"} to="/transport" onClick={()=> handleDropdownItemClick('/transport')}/>*/}
-            <DropdownItem text = {"Dodatkowe atrakcje"} to="/atrakcje" onClick={()=> handleDropdownItemClick('/atrakcje')}/>
+            <DropdownItem text = {"Transport gości"} to="/transport" onClick={()=> handleDropdownItemClick('/transport')}/>
+            <DropdownItem text = {"Plan stołów"} to="/plan-stolow" onClick={()=> handleDropdownItemClick('/plan-stolow')}/>
+            {/*<DropdownItem text = {"Dodatkowe atrakcje"} to="/atrakcje" onClick={()=> handleDropdownItemClick('/atrakcje')}/>*/}
             <DropdownItem text = {"Więcej..."} to="/wiecej" onClick={()=> handleDropdownItemClick('/wiecej')}/>
           </ul>
         </div>
