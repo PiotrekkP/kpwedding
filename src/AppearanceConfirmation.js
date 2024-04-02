@@ -1,6 +1,7 @@
 import SiteHeader from './SiteHeader';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+
 export default function AppearanceConfirmation() {
     const contentContainerStyle = {
         display: 'flex',
@@ -50,9 +51,62 @@ export default function AppearanceConfirmation() {
       };
       
       const navigate = useNavigate();
-      const handleConfirmButtonClick = (targetPage) => {
-        navigate(targetPage);
-      };
+      const handleConfirmButtonClick = async () => {
+        const guestNameAndSurname = document.getElementById('guest').value;
+        const guestDietType = document.getElementById('diet').value;
+        const accompanyingPersonNameAndSurname = document.getElementById('guest2').value;
+        const accompanyingPersonDietType = document.getElementById('diet2').value;
+        const firstChildName = document.getElementById('childName').value;
+        const firstChildAgeInput = document.getElementById('childAge').value;
+        const secondChildName = document.getElementById('childName2').value;
+        const secondChildAgeInput = document.getElementById('childAge2').value;
+        const isTransportFromChurchNeeded = buttonTText === 'tak';
+
+        const firstChildAgeValue = firstChildAgeInput !== '' ? parseInt(firstChildAgeInput) : null;
+        const secondChildAgeValue = secondChildAgeInput !== '' ? parseInt(secondChildAgeInput) : null;
+        const dataToSend = JSON.stringify({
+          guestNameAndSurname,
+          guestDietType,
+          accompanyingPersonNameAndSurname,
+          accompanyingPersonDietType,
+          firstChildName,
+          firstChildAge: firstChildAgeValue,
+          secondChildName,
+          secondChildAge: secondChildAgeValue,
+          isTransportFromChurchNeeded,
+      });
+      try {
+        const myHeaders = new Headers();
+        myHeaders.append("Ocp-Apim-Subscription-Key", "eb54c69b3fdc4e349f7426099ae8f1e7");
+        myHeaders.append("Content-Type", "application/json");
+        //myHeaders.append("Cookie", "ARRAffinity=dd4858d47453f3d8de56b25f8abbfc0212c5b8bdf309b461d7c25b527d34d1ac; ARRAffinitySameSite=dd4858d47453f3d8de56b25f8abbfc0212c5b8bdf309b461d7c25b527d34d1ac");
+        
+        //const raw = JSON.stringify({
+        //  "id": 0,
+        //  "guestNameAndSurname": "Piotr Palus",
+        //  "guestDietType": "zwykla",
+        // "accompanyingPersonNameAndSurname": "Wiktoria Zdaniz5",
+        //  "accompanyingPersonDietType": "zwykla",
+        //  "isTransportFromChurchNeeded": true
+        //});
+        
+        const requestOptions = {
+          method: "POST",
+          headers: myHeaders,
+          body: dataToSend,
+          redirect: "follow"
+        };
+        
+        fetch("https://webapplication3-api.azure-api.net/WeatherForecast", requestOptions)
+          .then((response) => response.text())
+          .then((result) => console.log(result))
+          .catch((error) => console.error(error));
+        //console.log('Response data:', responseData);
+        navigate('/podziekowanie');
+      } catch (error) {
+        console.error('Blad wysylania danych do API', error);
+      }
+    };
 
       const toggleOneButton = () => {
         if (buttonCColor === 'rgb(207, 206, 206)'){
@@ -94,12 +148,12 @@ export default function AppearanceConfirmation() {
         <p className="p-appearance-confirmation-left-info">
             Imię i nazwisko
         </p>
-        <textarea className="p-appearance-confirmation-right-details-ta"></textarea>
+        <textarea id="guest" className="p-appearance-confirmation-right-details-ta"></textarea>
         <p className="p-appearance-confirmation-left-info">
             Dieta
         </p>
         
-        <select className="select-diet" id="diet" name="diet">
+        <select id="diet" className="select-diet" name="diet">
             <option className="option-diet" value="zwykla">zwykła</option>
             <option className="option-diet" value="wegetarianska">wegetariańska</option>
             <option className="option-diet" value="weganska">wegańska</option>
@@ -111,11 +165,11 @@ export default function AppearanceConfirmation() {
         <p className="p-appearance-confirmation-left-info" style={{ backgroundColor: isAPDisabled ? 'rgb(66,66,66)' : 'rgb(112,146,88)'}}>
             Imię i nazwisko
         </p>
-        <textarea readOnly={isAPDisabled} className="p-appearance-confirmation-right-details-ta" style={{backgroundColor: isAPDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}}></textarea>
+        <textarea id="guest2" readOnly={isAPDisabled} className="p-appearance-confirmation-right-details-ta" style={{backgroundColor: isAPDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}}></textarea>
         <p className="p-appearance-confirmation-left-info" style={{backgroundColor: isAPDisabled ? 'rgb(66,66,66)' : 'rgb(112,146,88)'}}>
             Dieta
         </p>
-        <select className="select-diet" id="diet" name="diet" style={{backgroundColor: isAPDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}} disabled={isAPDisabled}>
+        <select id="diet2" className="select-diet" name="diet" style={{backgroundColor: isAPDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}} disabled={isAPDisabled}>
             <option className="option-diet" value="zwykla">zwykła</option>
             <option className="option-diet" value="wegetarianska">wegetariańska</option>
             <option className="option-diet" value="weganska">wegańska</option>
@@ -129,19 +183,19 @@ export default function AppearanceConfirmation() {
         <p className="p-appearance-confirmation-left-info" style={{ backgroundColor: isCDisabled ? 'rgb(66,66,66)' : 'rgb(112,146,88)'}}>
             Imię
         </p>
-        <textarea readOnly={isCDisabled} className="p-appearance-confirmation-right-details-ta" style={{backgroundColor: isCDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}}></textarea>
+        <textarea id="childName" readOnly={isCDisabled} className="p-appearance-confirmation-right-details-ta" style={{backgroundColor: isCDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}}></textarea>
         <p className="p-appearance-confirmation-left-info" style={{ backgroundColor: isCDisabled ? 'rgb(66,66,66)' : 'rgb(112,146,88)'}}>
             Wiek
         </p>
-        <textarea readOnly={isCDisabled} className="p-appearance-confirmation-right-details-ta" style={{ backgroundColor: isCDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}}></textarea>
+        <textarea id="childAge" readOnly={isCDisabled} className="p-appearance-confirmation-right-details-ta" style={{ backgroundColor: isCDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}}></textarea>
         <p className="p-appearance-confirmation-left-info" style={{ backgroundColor: isCDisabled || isTwoDisabled ? 'rgb(66,66,66)' : 'rgb(112,146,88)'}}>
             Imię
         </p>
-        <textarea readOnly={isCDisabled || isTwoDisabled} className="p-appearance-confirmation-right-details-ta" style={{backgroundColor: isCDisabled || isTwoDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}}></textarea>
+        <textarea id="childName2" readOnly={isCDisabled || isTwoDisabled} className="p-appearance-confirmation-right-details-ta" style={{backgroundColor: isCDisabled || isTwoDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}}></textarea>
         <p className="p-appearance-confirmation-left-info" style={{ backgroundColor: isCDisabled || isTwoDisabled ? 'rgb(66,66,66)' : 'rgb(112,146,88)'}}>
             Wiek
         </p>
-        <textarea readOnly={isCDisabled || isTwoDisabled} className="p-appearance-confirmation-right-details-ta" style={{ backgroundColor: isCDisabled || isTwoDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}}></textarea>
+        <textarea id="childAge2" readOnly={isCDisabled || isTwoDisabled} className="p-appearance-confirmation-right-details-ta" style={{ backgroundColor: isCDisabled || isTwoDisabled ? 'rgb(207, 206, 206)' : 'rgb(178,186,119)'}}></textarea>
         <p className="p-appearance-confirmation-left-info-half-t" style={{ backgroundColor: isTransportDisabled ? 'rgb(66,66,66)' : 'rgb(112,146,88)'}}>
             Potrzebuję transportu z kościoła na salę
         </p>
