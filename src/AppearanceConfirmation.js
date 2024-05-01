@@ -73,11 +73,11 @@ export default function AppearanceConfirmation() {
           firstChildAge: firstChildAgeValue,
           secondChildName,
           secondChildAge: secondChildAgeValue,
-          isTransportFromChurchNeeded,
+          isTransportFromChurchNeeded: isTransportFromChurchNeeded.toString(),
       });
       try {
         const myHeaders = new Headers();
-        myHeaders.append("Ocp-Apim-Subscription-Key", "eb54c69b3fdc4e349f7426099ae8f1e7");
+        //myHeaders.append("Ocp-Apim-Subscription-Key", "eb54c69b3fdc4e349f7426099ae8f1e7");
         myHeaders.append("Content-Type", "application/json");
         //myHeaders.append("Cookie", "ARRAffinity=dd4858d47453f3d8de56b25f8abbfc0212c5b8bdf309b461d7c25b527d34d1ac; ARRAffinitySameSite=dd4858d47453f3d8de56b25f8abbfc0212c5b8bdf309b461d7c25b527d34d1ac");
         
@@ -97,7 +97,7 @@ export default function AppearanceConfirmation() {
           redirect: "follow"
         };
         
-        fetch("https://webapplication3-api.azure-api.net/WeatherForecast", requestOptions)
+        fetch("https://kingapatrykweddingapimanagementservice.azure-api.net/api/Confirmation", requestOptions)
           .then((response) => response.text())
           .then((result) => console.log(result))
           .catch((error) => console.error(error));
