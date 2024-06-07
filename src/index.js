@@ -10,6 +10,7 @@ import './More.css';
 import './AppearanceConfirmation.css';
 import './Thanks.css';
 import './Tables.css';
+import './Disk.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

@@ -9,6 +9,7 @@ import AppearanceConfirmation from './AppearanceConfirmation';
 import Thanks from './Thanks';
 import Tables from './Tables';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Disk from './Disk';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/wiecej" element={<More/>}></Route>
             <Route path="/potwierdzenie" element={<AppearanceConfirmation/>}></Route>
             <Route path="/podziekowanie" element={<Thanks/>}></Route>
+            <Route path="/dysk" element={<Disk/>}></Route>
           </Routes>
         </div>
       </div>

@@ -41,6 +41,7 @@ export default function SiteHeader() {
             <DropdownItem text = {"Transport gości"} to="/transport" onClick={()=> handleDropdownItemClick('/transport')}/>
             <DropdownItem text = {"Plan stołów"} to="/plan-stolow" onClick={()=> handleDropdownItemClick('/plan-stolow')}/>
             {/*<DropdownItem text = {"Dodatkowe atrakcje"} to="/atrakcje" onClick={()=> handleDropdownItemClick('/atrakcje')}/>*/}
+            <DropdownItem text = {"Dysk"} to="/dysk" onClick={()=> handleDropdownItemClick('/dysk')}/>
             <DropdownItem text = {"Więcej..."} to="/wiecej" onClick={()=> handleDropdownItemClick('/wiecej')}/>
           </ul>
         </div>
