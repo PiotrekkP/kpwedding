@@ -15,7 +15,7 @@ const Home = () => {
     
     <div className="content-container-home">
       <SiteHeader></SiteHeader>
-      <button className="button-confirm-appearance" onClick={()=> handleConfirmButtonClick('/dysk')}>Wrzuć zdjęcia i filmy z wesela!</button>
+      <button className="button-confirm-appearance" onClick={()=> handleConfirmButtonClick('/dysk')}>Dodaj swoje zdjęcia i filmy z wesela!</button>
       <p className="p-contact-details-kinga-home"><a className='a-tel' href='tel:+48504386599'>Kinga +48 504 386 599</a></p>
       <p className="p-contact-details-patryk-home"><a className='a-tel' href='tel:+48666174152'>Patryk +48 666 174 152</a></p>
     </div>
